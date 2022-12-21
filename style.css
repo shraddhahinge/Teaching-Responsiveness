@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0
+}
+
+.desktop_header, .mobile_header{
+    height:50px;
+    background-color: black;
+    color: white;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    position: sticky;
+    top: 0;
+}
+
+.desktop_header .left_detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex: 1; */
+    width:500px;
+    /* border:2px solid yellow */
+}
+.desktop_header .left_detail a, .mobile_header .left_btn a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+/* .desktop_header .right_btn button{
+    background-color: black;
+} */
+.desktop_header .right_btn img, .mobile_header .right_btn img{
+height: 20px;
+width: 20px;
+color: white;
+}
+
+.mobile_header_display{
+    display: none;
+}
+
+.desktop_header_display{
+    display: block;
+   position: relative;
+}
+ .banner{
+    width: 100%;
+    /* height:100vh */
+ }
+ .banner_container{
+    position: relative;
+ }
+.banner_container img{
+width:100%;
+height: 100%;
+object-fit:cover;
+
+}
+
+.banner_text{
+    position: absolute;
+    bottom: 70px;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.band{
+    /* margin-top: 40px; */
+    /* width: 600px; */
+    margin: 0px auto 0px auto;
+    margin-top: 10%;
+    /* text-align: center; */
+}
+
+.band_title{
+    text-align: center;
+}
+.band_title h2, .band_title p{
+    margin:20px 0px 20px 0px
+}
+.band_description p{
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+    color: red;
+}
+.band_card_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.band_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px
+}
+
+.tour{
+margin-top: 20px;
+background-color: black;
+height: 100%;
+width: 100%;
+}
+
+.tour h2{
+    font-size: 60px;
+color: white;
+font-weight: 600;
+text-align: center;
+}
+
+.tour .text{
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+
+.tour .table{
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    margin-top: 30px;
+}
+
+.tour .table .row{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 40px;
+border-bottom: 1px solid gray;
+padding: 0px 10px 0px 10px;
+}
+
+.booking_row{
+    justify-content: space-between;
+}
+ .soldOut{
+    margin-left: 10px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+}
+.month{
+    color: gray;
+}
+.booking_row .bookings{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding:5px;
+    text-align: center;
+}
+
+.card_container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    width: 800px; 
+     margin: 0 auto;
+margin-top: 30px;
+}
+.card{
+    border: 1px solid white;
+    width:300px;
+    margin: 0px 10px 0px 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.card_img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.city, .date,.description{
+    color:black;
+    margin: 20px 0px;
+    padding: 0px 10px;
+    
+}
+
+.city{
+    font-weight: 600;
+}
+
+.date{
+    color: gray;
+
+}
+.card_btn_layout{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_btn{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+}
+
+.card_btn p{
+    color: white;
+}
+
+/* laptop s */
+
+@media all and (max-width:1024px){
+    .card_container{
+        width: 90%;
+        /* flex-direction: column; */
+    }
+
+    .card{
+        width:100%;
+margin-top: 10px;
+    }
+}
+/* tablet */
+@media all and (max-width:768px){
+    
+    .tour .table{
+        width: 90%;
+    }
+
+    .card_container{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card{
+        width:100%;
+margin-top:10px
+    }
+}
+
+/* mobile */
+
+@media all and (max-width:425px){
+    .mobile_header_display{
+        display:block
+    }
+
+    .desktop_header_display{
+        display: none;
+    }
+
+    
+    .band_description p{
+        width:100%
+    }
+
+    .tour .table{
+        width: 90%;
+    }
+
+    .card_container{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card{
+        width:100%;
+        margin-top: 10px;
+    }
+}
+
